@@ -1,5 +1,7 @@
 package com.lassanit.fireauthkit;
 
+import static com.lassanit.authkit.R.drawable.easy_logo;
+
 import android.annotation.SuppressLint;
 
 import androidx.annotation.Nullable;
@@ -14,8 +16,7 @@ import com.lassanit.authkit.interactions.classes.AndroidApp;
 public class SplashActivity extends AuthKitCompatActivity implements AuthKitOptions.CallBacks {
     @Override
     public AuthKitOptions setOptions() {
-        return new AuthKitOptions.Builder(FirebaseAuth.getInstance()
-                , new AndroidApp(getString(R.string.app_name), com.lassanit.authkit.R.drawable.easy_logo))
+        return new AuthKitOptions.Builder(FirebaseAuth.getInstance(), new AndroidApp("App Name", easy_logo))
                 .setCallBacks(this)
                 .build();
     }
