@@ -5,24 +5,24 @@
 <table>
      <tr>
         <td>
-          <img src="https://github.com/Wasi-Ibn-Adam/FireAuthKit/blob/b8294327230bafacc3bbea3dfc9e004e46176855/medias/img_%20(1).jpg" width="250" height="400" />
+          <img src="medias/img_ (1).jpg" width="200" height="400" />
         </td>
         <td>
-          <img src="https://github.com/Wasi-Ibn-Adam/FireAuthKit/blob/b8294327230bafacc3bbea3dfc9e004e46176855/medias/img_%20(3).jpg" width="250" height="400" />
+          <img src="medias/img_ (3).jpg" width="200" height="400" />
         </td>   
      </tr>
      <tr>
         <td>
-          <img src="https://github.com/Wasi-Ibn-Adam/FireAuthKit/blob/b8294327230bafacc3bbea3dfc9e004e46176855/medias/img_%20(7).jpg" width="250" height="400" />
+          <img src="medias/img_ (7).jpg" width="200" height="400" />
         </td>
         <td>
-          <img src="https://github.com/Wasi-Ibn-Adam/FireAuthKit/blob/b8294327230bafacc3bbea3dfc9e004e46176855/medias/img_%20(6).jpg" width="250" height="400" />
+          <img src="medias/img_ (6).jpg" width="200" height="400" />
         </td>  
          <td>
-          <img src="https://github.com/Wasi-Ibn-Adam/FireAuthKit/blob/b8294327230bafacc3bbea3dfc9e004e46176855/medias/img_%20(5).jpg" width="250" height="400" />
+          <img src="medias/img_ (5).jpg" width="200" height="400" />
         </td>  
          <td>
-          <img src="https://github.com/Wasi-Ibn-Adam/FireAuthKit/blob/b8294327230bafacc3bbea3dfc9e004e46176855/medias/img_%20(4).jpg" width="250" height="400" />
+          <img src="medias/img_ (4).jpg" width="200" height="400" />
         </td>  
      </tr>
  </table>
