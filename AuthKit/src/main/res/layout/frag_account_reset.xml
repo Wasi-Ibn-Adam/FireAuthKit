@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"
+    android:gravity="bottom|center"
+    android:orientation="vertical"
+    android:padding="15dp"
+    android:theme="@style/Theme.AuthKit">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/img_logo"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginBottom="50dp"
+        android:transitionName="logo"
+        app:srcCompat="@drawable/easy_logo" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <EditText
+                android:id="@+id/txt_email"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:autofillHints="emailAddress"
+                android:autofilledHighlight="@color/transparent"
+                android:background="@drawable/shape_input"
+                android:drawableStart="@drawable/email"
+                android:drawablePadding="10dp"
+                android:drawableTint="@color/optheme"
+                android:drawableTintMode="src_in"
+                android:importantForAutofill="yes"
+                android:inputType="textEmailAddress"
+                android:transitionName="email" />
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/btn_reset"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/next"
+            android:tint="@color/theme"
+            android:tintMode="src_in"
+            android:background="@drawable/btn_background"
+            android:transitionName="btn" />
+    </LinearLayout>
+</LinearLayout>

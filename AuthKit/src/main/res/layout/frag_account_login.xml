@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"
+    android:gravity="bottom|center"
+    android:orientation="vertical"
+    android:padding="15dp"
+    android:theme="@style/Theme.AuthKit">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/img_logo"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginBottom="20dp"
+        android:transitionName="logo"
+        app:srcCompat="@drawable/easy_logo" />
+
+    <EditText
+        android:id="@+id/txt_email"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginBottom="10dp"
+        android:autofillHints="emailAddress"
+        android:autofilledHighlight="@color/transparent"
+        android:background="@drawable/shape_input"
+        android:drawableStart="@drawable/email"
+        android:drawablePadding="10dp"
+        android:drawableTint="@color/optheme"
+        android:drawableTintMode="src_in"
+        android:importantForAutofill="yes"
+        android:inputType="textEmailAddress"
+        android:transitionName="email" />
+
+    <EditText
+        android:id="@+id/txt_pass"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginBottom="10dp"
+        android:autofillHints="password"
+        android:background="@drawable/shape_input"
+        android:drawableStart="@drawable/pass"
+        android:drawablePadding="10dp"
+        android:drawableTint="@color/optheme"
+        android:drawableTintMode="src_in"
+        android:inputType="textPassword"
+        android:transitionName="pass" />
+
+    <TextView
+        android:id="@+id/txt_forget"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="@string/forget_password"
+        android:textColor="@color/optheme"
+        tools:ignore="RtlHardcoded" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_signin"
+        android:layout_width="247dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/shape_btn"
+        android:text="@string/log_in"
+        android:textColor="@color/theme"
+        android:transitionName="btn" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:text="@string/new_user"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt_reg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/register_now"
+            android:textColor="@color/optheme"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</LinearLayout>

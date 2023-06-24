@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"
+    android:gravity="bottom|center"
+    android:orientation="vertical"
+    android:padding="15dp"
+    android:theme="@style/Theme.AuthKit">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/img_logo"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginBottom="20dp"
+        android:transitionName="logo"
+        app:srcCompat="@drawable/easy_logo" />
+
+    <com.lassanit.sso.phone.PhoneEditText
+        android:id="@+id/txt_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@drawable/shape_input"
+        android:inputType="phone" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_phone"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/shape_btn"
+        android:text="Send Code"
+        android:textAllCaps="false"
+        android:textColor="@color/theme"
+        android:transitionName="btn" />
+
+    <com.raycoarana.codeinputview.CodeInputView
+        android:id="@+id/txt_code"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@drawable/shape_input"
+        app:animate_on_complete="true"
+        app:code_text_color="@color/optheme"
+        app:code_text_size="20sp"
+        app:error_color="#D32F2F"
+        app:input_type="numeric"
+        app:length_of_code="6"
+        app:on_complete_delay="50"
+        app:underline_color="#457ad1"
+        app:underline_selected_color="#9e1ace" />
+
+    <TextView
+        android:id="@+id/txt_timer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="57 Sec"
+        android:textColor="@color/optheme"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txt_resend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Resend Code?"
+        android:textColor="#3F51B5"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+</LinearLayout>
+

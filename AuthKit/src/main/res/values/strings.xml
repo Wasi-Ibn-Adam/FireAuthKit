@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="todo">todo</string>
+    <string name="forget_password"><u>Forget Password</u></string>
+    <string name="log_in">Login</string>
+    <string name="register_now"><u>Sign UP</u></string>
+    <string name="new_user">New User?</string>
+
+    <string name="powered_by">Powered By</string>
+
+    <string name="com_lamudi_phonefield_edittext">phone_edit_text</string>
+    <string name="com_lamudi_phonefield_flag_spinner">flag_spinner</string>
+    <string name="com_lamudi_phonefield_til_phone">til_phone</string>
+    <string name="terms"><u>Terms &amp; Conditions</u></string>
+    <string name="policy"><u>Privacy Policy</u></string>
+    <string name="policy_terms">By continuing you accept our</string>
+</resources>

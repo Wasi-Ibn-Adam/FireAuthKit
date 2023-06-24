@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="theme">#000000</color>
+    <color name="optheme">#FFFFFF</color>
+
+    <color name="start_color">#04DFAF</color>
+    <color name="center_color">#03D6C3</color>
+    <color name="end_color">#02CDD7</color>
+
+
+
+
+    <color name="optoolbar">#BF000000</color>
+
+    <color name="gold_200">#CFC2A4</color>
+    <color name="gold_500">#D0BE94</color>
+    <color name="gold_700">#BCAB85</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="tintLight">#A1FFFFFF</color>
+    <color name="tintDark">#A1000000</color>
+
+
+    <color name="bg_app">#4D47453F</color>
+
+</resources>
