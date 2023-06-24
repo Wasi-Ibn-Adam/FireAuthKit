@@ -79,7 +79,8 @@
         ......
 #
         dependencies {
-            implementation 'com.github.Wasi-Ibn-Adam:FireAuthKit:1.1.1'
+            implementation 'com.github.Wasi-Ibn-Adam:FireAuthKit:1.0.1'
+            implementation 'androidx.appcompat:appcompat:1.6.1'
             .....
         }
 # Step 6->
