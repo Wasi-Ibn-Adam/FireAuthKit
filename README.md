@@ -5,24 +5,24 @@
 <table>
      <tr>
         <td>
-          <img src="https://github.com/Wasi-Ibn-Adam/FireAuthKit/blob/b8294327230bafacc3bbea3dfc9e004e46176855/medias/img_%20(1).jpg" width="250" height="400" />
+          <img src="medias/img_ (1).jpg" width="200" height="400" />
         </td>
         <td>
-          <img src="https://github.com/Wasi-Ibn-Adam/FireAuthKit/blob/b8294327230bafacc3bbea3dfc9e004e46176855/medias/img_%20(3).jpg" width="250" height="400" />
+          <img src="medias/img_ (3).jpg" width="200" height="400" />
         </td>   
      </tr>
      <tr>
         <td>
-          <img src="https://github.com/Wasi-Ibn-Adam/FireAuthKit/blob/b8294327230bafacc3bbea3dfc9e004e46176855/medias/img_%20(7).jpg" width="250" height="400" />
+          <img src="medias/img_ (7).jpg" width="200" height="400" />
         </td>
         <td>
-          <img src="https://github.com/Wasi-Ibn-Adam/FireAuthKit/blob/b8294327230bafacc3bbea3dfc9e004e46176855/medias/img_%20(6).jpg" width="250" height="400" />
+          <img src="medias/img_ (6).jpg" width="200" height="400" />
         </td>  
          <td>
-          <img src="https://github.com/Wasi-Ibn-Adam/FireAuthKit/blob/b8294327230bafacc3bbea3dfc9e004e46176855/medias/img_%20(5).jpg" width="250" height="400" />
+          <img src="medias/img_ (5).jpg" width="200" height="400" />
         </td>  
          <td>
-          <img src="https://github.com/Wasi-Ibn-Adam/FireAuthKit/blob/b8294327230bafacc3bbea3dfc9e004e46176855/medias/img_%20(4).jpg" width="250" height="400" />
+          <img src="medias/img_ (4).jpg" width="200" height="400" />
         </td>  
      </tr>
  </table>
@@ -41,10 +41,10 @@
 ####        6) Twitter
 ###    *********NOTE**********
 ####           1) Its is important to note that authentication with Google also require to setup your project
-###             with Google Cloud and provide specific info where require 
-###            Same goes for Facebook and other Platforms that are supported
+#####             with Google Cloud and provide specific info where require 
+#####             Same goes for Facebook and other Platforms that are supported
 ####           2) Some Methods require your App to be published on Google PlayStore before working 
-###            e.g: Phone Authentication -- to use it for testing you can add numbers in your Firebase test numbers
+#####             e.g: Phone Authentication -- to use it for testing you can add numbers in your Firebase test numbers
 
 # Step 3->
 ####    DownLoad config file for your app and Add it in to you App
@@ -79,7 +79,8 @@
         ......
 #
         dependencies {
-            implementation 'com.github.Wasi-Ibn-Adam:FireAuthKit:1.1.1'
+            implementation 'com.github.Wasi-Ibn-Adam:FireAuthKit:1.0.1'
+            implementation 'androidx.appcompat:appcompat:1.6.1'
             .....
         }
 # Step 6->
@@ -88,24 +89,25 @@
 ####        As Login/Signup required to be first in app this Module is designed in a way to use it perfectly
 ####        also no need for extra Splash_Activity/Screen for your app. this module covers all
     
-#####   1 -> Create an activity and extend it with 'SSO_Activity'   
+#####   1 -> Create an activity and extend it with 'AuthKitCompatActivity'   
 #####   2 -> mention it in your manifest file   // just like normal activity
-#####   3 -> implement the function 'Runner setRunner()'
-#####   4 -> override functions of Runner class to change settings // details are provided in each function description
+#####   3 -> implement the function 'public AuthKitOptions setOptions();'
+#####   4 -> override functions of AuthKitOptions class to change settings // details are provided in each function description
 
 ####   and there you go nothing to write and worry about how things will work in it
 ####   you can use this module in projects as many as you wish with one Firebase account so that your 
 ####   all app users can be at one place 
-####
-####   to access information of user you can use 'SSO.class'
-####   like: name, email, phone, image-uri, and user-id(UID)
-####   moreover if you have dependencies of firebase auth you can also get user from there directly
 ####   build.gradle/app
     dependencies {
         implementation 'com.google.firebase:firebase-auth:X.X.X'
         -------
     }
 ## JAVA CODE
-####      FirebaseUser user = SSO.getUser();
-###               or
-####      FirebaseUser user= FirebaseAuth.getInstance().getCurrentUser();
+####   
+     @Override
+         public AuthKitOptions setOptions() {
+             return new AuthKitOptions.Builder(FirebaseAuth.getInstance() , new AndroidApp("App Name", easy_logo))
+                .setCallBacks(this)
+                .build();
+         }
+####
