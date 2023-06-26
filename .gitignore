@@ -1,6 +1,5 @@
 *.jks
 google-services.json
-
 *.iml
 .gradle
 /local.properties
