@@ -45,7 +45,6 @@ import java.util.Objects;
 
 public abstract class AuthKitCompatActivity extends AuthKitActivity implements Actions {
 
-
     public abstract AuthKitOptions setOptions();
 
     @Override
